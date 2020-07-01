@@ -1,5 +1,4 @@
-CC = gcc 
-random = "11"
+CC = gcc
 
 random-app: main.o random.o 
 	$(CC) build/main.o build/random.o  -o build/random-app
