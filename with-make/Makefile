@@ -1,4 +1,5 @@
 CC = gcc 
+random = "11"
 
 random-app: main.o random.o 
 	$(CC) build/main.o build/random.o  -o build/random-app
@@ -9,8 +10,5 @@ main.o: random/random.h
 
 random.o: random/random.h
 	mkdir -p build
-	#$(CC) -c random/random.c -o build/random.o
-	$(CC) -c random/mock_random.c -o build/random.o
-
-
-
+	$(CC) -c random/random.c -o build/random.o
+	#$(CC) -c random/mock_random.c -o build/random.o
