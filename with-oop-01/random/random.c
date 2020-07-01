@@ -3,11 +3,6 @@
 #include<stdio.h>
 #include <time.h>
 
-static void begin(){
-
-    printf("begin\n");
-}
-
 static void random_set_seed(){
     srand((int)time(NULL)); 
 }
